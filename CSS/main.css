@@ -146,49 +146,63 @@ ul.right li a {
 	letter-spacing: 0.1px;
 	font-size: 18px;
 }
-/*is that "{" supposed to be there?why?*/
-@media screen and (max-width:1000px) {
+
+/* Media Queries */
+
+@media (max-width: 750px) {
 	.searchBox input {
-	width: 650px;
-}
-ul.left, ul.right {
-	margin: 5px 0;
+		width: 70%;
+
+	}
+
 }
 
-@media screen and (max-width: 768px){*{
-		font-size: 15px;
+
+@media (max-width: 595px) {
+	ul.right {
+		display: none;
 	}
-ul.nav {
-	margin-top: 0;
-	margin-right:0;
+
+	ul.left {
+		float: none;
+		text-align: center;
+	}
+	.bottom {
+		text-align: center;
+	}
 }
-ul.nav li{
-	padding: 5px 13px 0 0;
-	margin: 5px 0 0 0;
+
+@media (max-width: 474px) {
+	* {
+		font-size: 12px;
+	}
+
+	ul.nav {
+		margin-right: 0;
+	}
+
+	ul.nav li {
+		margin-right: 0;
+	}
+
+	.profile_img {
+		display: none;
+	}
+
 }
-div.searchBox img {
-	padding: 142px 0 7px 0;
+
+@media (max-width: 400px) {
+	ul.left {
+		width: 80%
+	}
 }
-.searchBox input {
-	width: 400px;
-	height: 24px;
-	font-size: 15px;
-}
-ul.left, 
-ul.right {
-	margin: 5px;
-}
-ul.left{
-	padding-left:0;
-}
-ul.right{
-	padding-right: 0;
-	padding-left: 0;
-}
-ul.left li a, ul.right li a{
-	margin: 2px 4px 0;
-	font-size: 15px;
-}
-div.buttons button{
-	padding: 5px 12px;
-}
+
+
+
+
+
+
+
+
+
+
